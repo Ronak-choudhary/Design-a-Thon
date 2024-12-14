@@ -42,16 +42,54 @@
   }
 
   .service {
-      color: white;
-      background-color: rgba(255, 255, 255, 0.1); 
-      width: 250px; 
-      padding: 15px;
-      border: 1px solid white none;
-      border-radius: 10px;
-      box-shadow: 0px 0px 5px white;
-      text-align: left;
-      margin-top: 50px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 250px; 
+  padding: 15px;
+  border: 1px solid white none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px white;
+  text-align: left;
+  margin-top: 50px;
   }
+  #section4 {
+  height:750px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgb(6, 17, 33);
+  }
+  h1 {
+  color: #333;
+  text-align: center;
+  }
+  .review-section {
+  margin-top: 20px;
+  }
+  .review {
+  display: inline-block;
+  border: 1px solid white none;
+  background-image: linear-gradient(140deg,rgba(1, 1, 48, 0.76),rgba(0, 0, 0, 0.479),rgba(7, 0, 73, 0.76));
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: white;
+  }
+  .review h2 {
+  color: #007bff;
+  
+  }
+  .graph-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+
+.graph {
+  max-width: 100%; 
+  height: auto; 
+}
+
 
 </style>
 <body>
@@ -62,7 +100,7 @@
 
     <ul class="flex-grow space-y-1">
       <li>
-        <a href="#" class="flex flex-col items-center hover:text-gray-300">
+        <a href="#section1" class="flex flex-col items-center hover:text-gray-300">
           <img src="home.png" alt="home" class="scale-110">
           <span class="text-xs mb-1">Home</span>
         </a>
@@ -74,13 +112,13 @@
         </a>
       </li>
       <li>
-        <a href="#" class="flex flex-col items-center hover:text-gray-300">
+        <a href="#section3" class="flex flex-col items-center hover:text-gray-300">
           <img src="onrise.png" alt="" class="scale-125 mt-1">
           <span class="text-xs mb-1 mt-2">On-Rise</span>
         </a>
       </li>
       <li>
-        <a href="#" class="flex flex-col items-center hover:text-gray-300">
+        <a href="#section4" class="flex flex-col items-center hover:text-gray-300">
           <img src="review.png" alt="" class="scale-90">
           <span class="text-xs mb-1">Reviews</span>
         </a>
@@ -106,12 +144,13 @@
   </nav>
 
 <div id="section1">
-
   <div  class="webname ml-16  flex-1 flex justify-center items-center ">
     <div class="box h-full w-1/2 flex justify-center items-center ">
-      <p id="name">Krypton :<br>The Future of
-        Crypto Currency
+      <p id="name"><span class=" text-5xl"> Krypton :</span><br>The Future of
+        Crypto Currency<br>
+        <span class="text-white text-sm">Cryptocurrency is a digital or virtual form of money that uses cryptography for secure transactions, operating independently of a central authority like a bank. It is decentralized and often based on blockchain technology.</span>
       </p>
+     
     </div>
     <div class="h-full w-1/2 flex justify-center items-center">
       <img src="klogo background.jpeg" alt="" class="rounded-3xl shadow-xl shadow-zinc-800/50">
@@ -122,7 +161,7 @@
   
 <div id="section2" class="flex flex-row bg-black">
   <div id="services" class=" ml-16  flex flex-col mt-20 scale-125">
-    <div class="service">
+    <div class="service ">
       <span>State-of-the-Art Encryption:</span>
       <br>
       Harness the power of advanced cryptographic algorithms designed to outpace emerging threats.
@@ -152,9 +191,11 @@
   </div>
 </div>
 </div>
-<div class="flex flex-row bg-black">
+
+<div id="section3">
+  <div class="flex flex-row bg-black">
     <video data-auto-animate="" playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true" data-object-fit="cover">
-    <source src="https://polytech-assets.polygon.technology/videos/solutions/zkevm720p.mp4" data-wf-ignore="true">
+      <source src="https://polytech-assets.polygon.technology/videos/solutions/zkevm720p.mp4" data-wf-ignore="true">
     </video>
     <div class="container mx-auto p-4">
       <div>
@@ -167,10 +208,13 @@
           <div class="flex items-center justify-between bg-gray-800 rounded-lg p-4">
             <div class="flex items-center">
               <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin" class="w-8 h-8 mr-4">
-              <div>
-                <h3 class="text-sm font-semibold">Bitcoin</h3>
-                <p class="text-xs text-gray-400">BTC</p>
-              </div>
+                <div>
+                  <h3 class="text-sm font-semibold">Bitcoin</h3>
+                  <p class="text-xs text-gray-400">BTC</p>
+                </div>
+            </div>
+            <div class="graph-container">
+              <img src="/graph.svg" class="graph">
             </div>
             <div class="text-right">
               <p class="text-sm font-bold">$65,642.31</p>
@@ -181,10 +225,13 @@
           <div class="flex items-center justify-between bg-gray-800 rounded-lg p-4">
             <div class="flex items-center">
               <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="Ethereum" class="w-8 h-8 mr-4">
-              <div>
-                <h3 class="text-sm font-semibold">Ethereum</h3>
-                <p class="text-xs text-gray-400">ETH</p>
-              </div>
+                <div>
+                  <h3 class="text-sm font-semibold">Ethereum</h3>
+                  <p class="text-xs text-gray-400">ETH</p>
+                </div>
+            </div>
+            <div class="graph-container">
+              <img src="/graph2.svg" class="graph">
             </div>
             <div class="text-right">
               <p class="text-sm font-bold">$3,142.31</p>
@@ -195,10 +242,13 @@
           <div class="flex items-center justify-between bg-gray-800 rounded-lg p-4">
             <div class="flex items-center">
               <img src="cronos.png" alt="Cronos" class="w-8 h-8 mr-4">
-              <div>
-                <h3 class="text-sm font-semibold">Cronos</h3>
-                <p class="text-xs text-gray-400">CRO</p>
-              </div>
+                <div>
+                  <h3 class="text-sm font-semibold">Cronos</h3>
+                  <p class="text-xs text-gray-400">CRO</p>
+                </div>
+            </div>
+            <div class="graph-container">
+              <img src="/graph3.svg" class="graph">
             </div>
             <div class="text-right">
               <p class="text-sm font-bold">$0.13028</p>
@@ -206,13 +256,17 @@
             </div>
           </div>
           <!-- Solana -->
+             
           <div class="flex items-center justify-between bg-gray-800 rounded-lg p-4">
             <div class="flex items-center">
               <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana" class="w-8 h-8 mr-4">
-              <div>
-                <h3 class="text-sm font-semibold">Solana</h3>
-                <p class="text-xs text-gray-400">SOL</p>
-              </div>
+                <div>
+                  <h3 class="text-sm font-semibold">Solana</h3>
+                  <p class="text-xs text-gray-400">SOL</p>
+                </div>
+            </div>
+            <div class="graph-container">
+              <img src="/graph 4.svg" class="graph">
             </div>
             <div class="text-right">
               <p class="text-sm font-bold">$153.48</p>
@@ -222,9 +276,52 @@
         </div>
       </div>
     </div>
+  </div>
 </div>
-  
-    
+
+<div id="section4">
+  <div class="container ml-16">
+    <h1 class="text-3xl text-white underline">Cryptocurrency Reviews</h1>
+      <div class="review-section">
+        <div class="review">
+            <h2>Bitcoin (BTC)</h2>
+            <p>Bitcoin remains the pioneer in the cryptocurrency world, valued for its decentralization and security, but criticized for high energy consumption and transaction fees.</p>
+            <p><li>Decentralized: Operates without central authority.</li>
+                  <li> Secure: Uses blockchain and proof-of-work.</li>
+                  <li> High Energy Use: Mining requires significant electricity.</li>
+            </p>
+        </div>
+        <div class="review">
+            <h2>Ethereum (ETH)</h2>
+            <p>Known for its smart contract capabilities, Ethereum is praised for innovation but often faces challenges with scalability and high gas fees.</p>
+            <p>
+              <li>Smart Contracts: Enables decentralized applications (DApps).</li>
+              <li>Innovative: Powers NFTs and DeFi ecosystems.</li>
+              <li>Scalability Issues: Faces congestion and high gas fees.</li>
+            </p>
+        </div>
+        <div class="review">
+            <h2>Binance Coin (BNB)</h2>
+            <p>A popular utility token within the Binance ecosystem, BNB offers fast transactions and discounts but is closely tied to Binance's performance and reputation.</p>
+            <p>
+              <li>Utility Token: Powers the Binance ecosystem, including trading, fees, and services.</li>
+              <li>Fast Transactions: Optimized for speed within Binance operations.</li>
+              <li>Trading Discounts: Offers reduced fees for Binance exchange users.</li>
+
+            </p>
+        </div>
+        <div class="review">
+            <h2>Ripple (XRP)</h2>
+            <p>Ripple aims to revolutionize cross-border payments, with its fast transaction speeds, though regulatory challenges often cloud its future.</p>
+            <p>
+              <li>Fast Transactions: Ideal for cross-border payments.</li>
+              <li>Cross-Border Payments: Focused on the financial industry.</li>
+              <li>Regulatory Challenges: Faces scrutiny in some jurisdictions.</li>
+            </p>
+        </div>
+      </div>
+  </div>
+</div>   
 
 
 </body>
