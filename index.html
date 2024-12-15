@@ -12,7 +12,7 @@
 </head>
 <style>
   .webname{
-    background-color: rgb(6, 17, 33);
+    /* background-color: rgb(6, 17, 33); */
     /* background-image: url(/klogo\ background.jpeg); */
     height: 750px;
     background-size: cover;
@@ -89,6 +89,11 @@
   max-width: 100%; 
   height: auto; 
 }
+.star-display {
+  display: inline-flex;
+  font-size: 1.5rem;
+  color: #f5b301;
+}
 
 
 </style>
@@ -143,7 +148,7 @@
     </div>
   </nav>
 
-<div id="section1">
+<div id="section1" class="bg-gradient-to-b from-blue-900 to-black">
   <div  class="webname ml-16  flex-1 flex justify-center items-center ">
     <div class="box h-full w-1/2 flex justify-center items-center ">
       <p id="name"><span class=" text-5xl"> Krypton :</span><br>The Future of
@@ -281,18 +286,27 @@
 
 <div id="section4" class="bg-black">
   <div class="container ml-16">
-    <h1 class="text-3xl text-white underline">Cryptocurrency Reviews</h1>
+    <h1 class="text-3xl text-white mb-20">Cryptocurrency Reviews</h1>
       <div class="review-section">
         <div class="review">
-            <h2>Bitcoin (BTC)</h2>
+            <h2>Bitcoin (BTC)
+              <div class="star-display mx-4">
+                &#9733; &#9733; &#9733; &#9733; &#9733;
+              </div>
+            </h2>
             <p>Bitcoin remains the pioneer in the cryptocurrency world, valued for its decentralization and security, but criticized for high energy consumption and transaction fees.</p>
-            <p><li>Decentralized: Operates without central authority.</li>
-                  <li> Secure: Uses blockchain and proof-of-work.</li>
-                  <li> High Energy Use: Mining requires significant electricity.</li>
+            <p>
+              <li>Decentralized: Operates without central authority.</li>
+                <li> Secure: Uses blockchain and proof-of-work.</li>
+                <li> High Energy Use: Mining requires significant electricity.</li>
             </p>
         </div>
         <div class="review">
-            <h2>Ethereum (ETH)</h2>
+            <h2>Ethereum (ETH)
+              <div class="star-display mx-4">
+                &#9733; &#9733; &#9733; &#9734; &#9734;
+              </div>
+            </h2>
             <p>Known for its smart contract capabilities, Ethereum is praised for innovation but often faces challenges with scalability and high gas fees.</p>
             <p>
               <li>Smart Contracts: Enables decentralized applications (DApps).</li>
@@ -301,7 +315,11 @@
             </p>
         </div>
         <div class="review">
-            <h2>Binance Coin (BNB)</h2>
+            <h2>Binance Coin (BNB)
+              <div class="star-display mx-4">
+                &#9733; &#9733; &#9733; &#9734; &#9734;
+              </div>
+            </h2>
             <p>A popular utility token within the Binance ecosystem, BNB offers fast transactions and discounts but is closely tied to Binance's performance and reputation.</p>
             <p>
               <li>Utility Token: Powers the Binance ecosystem, including trading, fees, and services.</li>
@@ -311,7 +329,11 @@
             </p>
         </div>
         <div class="review">
-            <h2>Ripple (XRP)</h2>
+            <h2>Ripple (XRP)
+              <div class="star-display mx-4">
+                &#9733; &#9733; &#9734; &#9734; &#9734;
+              </div>
+            </h2>
             <p>Ripple aims to revolutionize cross-border payments, with its fast transaction speeds, though regulatory challenges often cloud its future.</p>
             <p>
               <li>Fast Transactions: Ideal for cross-border payments.</li>
@@ -328,26 +350,26 @@
     <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">We are a dynamic team of passionate <b>Kryptonions</b> dedicated to delivering exceptional results. Learn more about each of us below.</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300 ml-10">
-            <div class="w-full h-40 bg-gray-300 rounded-md mb-4 animate-pulse"><img src="logo.jpg" alt=""></div>
+        <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300 ml-12">
+            <div class="w-full h-40 rounded-md mb-4"><img src="vinubhaiya.jpg" alt="" class="h-full ml-10"></div>
             <h2 class="text-xl font-semibold text-gray-800">Vinit Vijal</h2>
             <p class="text-sm text-gray-600">Project Manager</p>
             <p class="mt-4 text-gray-500">Vinit is a visionary leader with a knack for managing complex projects and bringing the best out of the team.</p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
-            <div class="w-full h-40 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-full h-40 rounded-md mb-4"><img src="ronak.jpg" alt="" class="h-[23vh] ml-12"></div>
             <h2 class="text-xl font-semibold text-gray-800">Ronak Choudhary</h2>
             <p class="text-sm text-gray-600">Lead Developer</p>
             <p class="mt-4 text-gray-500">Ronak is a coding genius who transforms ideas into cutting-edge solutions with her programming skills.</p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
-            <div class="w-full h-40 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-full h-40 rounded-md mb-4"><img src="ishaan.jpg" alt="" class="h-[23vh] ml-12"></div>
             <h2 class="text-xl font-semibold text-gray-800">Ishaan Vats</h2>
             <p class="text-sm text-gray-600">Creative Designer</p>
             <p class="mt-4 text-gray-500">Ishaan is the creative force behind our visuals, delivering stunning designs and branding strategies.</p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 transition duration-300">
-            <div class="w-full h-40 bg-gray-300 rounded-md mb-4 animate-pulse"></div>
+            <div class="w-full h-40 rounded-md mb-4"><img src="gaurav.jpg" alt="" class="h-[23vh] ml-20"></div>
             <h2 class="text-xl font-semibold text-gray-800">Gaurav Kumar Singh</h2>
             <p class="text-sm text-gray-600">Marketing Specialist</p>
             <p class="mt-4 text-gray-500">Gaurav is a marketing expert who crafts campaigns that resonate with audiences and drive engagement.</p>
@@ -397,7 +419,7 @@
     <div class="relative ml-20 hover:scale-95 transition duration-200">
         <div class="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded blur-lg"></div>
         <div class="relative bg-gray-800 rounded p-6 flex items-center space-x-6 shadow-lg">
-            <div class="w-24 h-24 bg-gray-300 rounded-full animate-pulse"></div>
+            <div class="w-24 h-24 bg-gray-300 rounded-full"><img src="cat.jpeg" alt=""></div>
             <div>
                 <h2 class="text-2xl font-semibold text-white">Laddar</h2>
                 <p class="text-sm text-gray-300">Customer Support</p>
